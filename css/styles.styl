@@ -1,0 +1,455 @@
+@import 'styl/*'
+
+
+/*================BASIC STYLES===============*/
+html
+	font-size 16px
+	font-family Bazar  
+body,div, section, p, span, ul, nav, h1, h2, h3, h4, img 
+	-webkit-box-sizing border-box 
+	-moz-box-sizing border-box 
+	box-sizing border-box 
+html,body
+	margin 0
+	padding 0
+	width 100% 
+	max-width 100%
+	height 100%
+	min-height 100%	
+h1,h2,h3,h4
+	margin: 0
+	padding: 0	
+li
+	list-style: none
+ul, ol
+	padding: 0
+	margin: 0
+a
+	text-decoration: none
+img
+	max-width 100%
+	min-height 1px
+.clearfix
+	&:after
+		display: table
+		width: 100%
+		content: ""
+		clear: both
+.separator1
+	separator(-10px)		
+.separator2
+	separator(10px)	
+
+/*===============END OF BASIC STYLES==============*/
+
+/*==================HEADER=======================*/
+.header
+	background-color #75B5B5 
+	background-image url(../img/bg.jpg)
+	background-repeat repeat 
+	position relative
+.navbar_output
+	position relative
+	z-index 9999 
+.navbar-wrapper
+	// border 1px solid green	
+	margin 0 auto
+	position relative
+.navbar-menu
+	width 100%
+.navbar-menu.open
+	display inline-block	
+.menu-item
+	display inline-block
+	text-align center	
+	cursor pointer 
+	a
+		font-family Bazar
+		font-size 1rem 
+		color whiteColor 
+		text-transform uppercase 
+		-webkit-transition color 1s linear
+		-moz-transition color 1s linear
+		-ms-transition color 1s linear
+		-o-transition color 1s linear
+		transition color 1s linear
+		&:hover, &:focus, &:active
+			color blackColor
+
+.logo-image-wrapper
+	display inline-block
+	z-index 999
+	height logoHeight
+	img
+		max-height 100%
+		z-index 9999
+.visible-xs
+	width 1.5rem 
+	cursor pointer 
+	span
+		display inline-block
+		width 1.5rem
+		height 2px
+		background-color whiteColor
+		margin-bottom 5px 
+		float left		
+/*=============HEADER _ HEADER-PORTFOLIO=============*/
+	
+.header-image-wrapper 
+	// padding 0
+	img
+		min-width 10px
+		min-height 10px 
+		max-width 100% 
+		height auto
+/* ------------------SLIDER------------------*/
+.slider-wrapper
+	overflow hidden
+.slider-animated
+	width 400%
+	overflow hidden
+.slider
+	position relative
+	overflow hidden
+.slider-list
+	width inherit
+ .sl
+	float left
+	width 25%
+.slider-image-wrapper
+	border 0.8rem solid whiteColor
+	borderRadius(1%)
+	padding 0
+	position relative
+	background-color whiteColor
+	overflow hidden   
+	img
+		min-width 10px
+		max-width 100%
+		height auto 
+	h2
+		background-color whiteColor
+		color blackColor
+		font-family Bazar
+		text-align center
+		text-transform uppercase 
+		font-size 1.2em
+		padding-top 0.4em 
+.slider-controls
+	position absolute
+	left 0
+	bottom 50% 	
+	display block
+	width 25% 
+	padding 0 
+	display inline-block
+.controls
+	display inline-block
+	background-color whiteColor
+	color #808e8e
+	font-family Bazar
+	font-size 1.7rem 
+	line-height 3rem 
+	width 1rem
+	height 3rem 
+	cursor pointer
+	// borderRadius(50%)	
+	-webkit-transition color 1s 
+	-moz-transition color 1s 
+	-ms-transition color 1s 
+	-o-transition color 1s 
+	transition color 1s 
+	overflow hidden
+	padding 0 0.5rem
+	
+	&:hover, &:active, &:focus
+		color blackColor 
+		
+.prev
+	float left
+	border-bottom-right-radius: 2rem
+	border-top-right-radius: 2rem
+	text-align right
+	
+		
+.next
+	float right
+	border-bottom-left-radius: 2rem
+	border-top-left-radius: 2rem
+	text-align left 
+	
+	 
+/*-------------------END OF SLIDER--------*/
+.intro
+	color #f7ebd8
+	text-transform uppercase
+	text-align center
+	font-family Bazar
+	margin-top 1rem		
+	h1
+		margin-bottom 0.7rem
+/*=========================END OF HEADER SECTION========*/
+
+/*========================ABOUT-ME SECTION ================*/	
+
+.about-me
+	sectionPadding()
+	background-color #e1dbcb
+	background-image url(../img/bg2.jpg)
+	background-repeat repeat
+	position relative	
+.section-h1
+	sectionH1()	
+.section-h2
+	sectionH2()
+.section-heading
+	text-align center
+	img
+		sectionHeadingImageSeparator()
+.subsection-separator
+	width 100%
+	margin-bottom 5%
+	img
+		max-width 20%
+		vertical-align middle
+		
+.subsection-h3
+	color blackColor
+	font-size 1.8em 
+	text-transform uppercase
+	margin 5% 0
+.subsection-h4
+	color blackColor
+	font-family RobotoSlab-Regular
+	text-transform uppercase
+	margin 5% 0
+	font-weight lighter
+	font-size 1em  
+.image-wrapper-animated
+	width 100%
+	margin-top 5%
+	margin-bottom 5% 	
+	opacity 0	
+	-webkit-transition opacity 0.8s linear
+	-moz-transition opacity 0.8s linear
+	-ms-transition opacity 0.8s linear
+	-o-transition opacity 0.8s linear
+	transition opacity 0.8s linear
+	img		
+		vertical-align middle	
+.sl
+	display none	
+	opacity 0
+.sl.active
+	display block
+	opacity 1
+	-webkit-transition opacity 3s ease 
+	-moz-transition opacity 3s ease 
+	-ms-transition opacity 3s ease 
+	-o-transition opacity 3s ease 
+	transition opacity 3s ease 
+.delay-0
+	-webkit-transition-delay 0.1s 
+	-moz-transition-delay 0.1s 
+	-ms-transition-delay 0.1s 
+	-o-transition-delay 0.1s 
+	transition-delay 0.1s 
+.delay-3
+	-webkit-transition-delay 0.4s 
+	-moz-transition-delay 0.4s 
+	-ms-transition-delay 0.4s 
+	-o-transition-delay 0.4s 
+	transition-delay 0.4s 
+.delay-6
+	-webkit-transition-delay 0.7s 
+	-moz-transition-delay 0.7s 
+	-ms-transition-delay 0.7s 
+	-o-transition-delay 0.7s 
+	transition-delay 0.7s 
+.delay-9
+	-webkit-transition-delay 1s 
+	-moz-transition-delay 1s 
+	-ms-transition-delay 1s 
+	-o-transition-delay 1s 
+	transition-delay 1s
+// .animated.inView + .image-wrapper-animated
+// 	opacity 1 
+.image-wrapper-animated.inView
+	opacity 1
+.subsection-text
+	font-family RobotoSlab-Regular
+	color blackColor
+	text-align left
+	padding-bottom 100%
+	margin-bottom -100% 
+.centered
+	text-align center
+	max-width 100%
+/*========================ENF OF ABOUT-ME SECTION ================*/	
+		
+/*======================PORTFOLIO SECTION===========*/
+.portfolio
+	sectionPadding()
+	background-color #DE8563
+	background-image url(../img/bg3.png)
+	background-repeat repeat
+	position relative
+	
+.filters
+	margin 2% 0 
+	width 100% 
+	h3
+		font-family RobotoSlab-Regular
+		font-size 1.1em
+		vertical-align top
+		line-height 1.7em
+		color blackColor
+		display inline-block
+	img		
+		margin 0
+		height 2em
+		margin-left 0.3em 
+.portfolio-items
+	padding 0.5rem 
+
+.portfolio-item-wrapper
+	background-color whiteColor 
+	border 7px solid whiteColor 	
+	borderRadius(1.5%)
+	position relative
+	h4
+		background-color whiteColor 
+		text-align center
+		padding-bottom 1%
+		font-family MyriadPro-Regular
+		text-transform uppercase
+		color blackColor
+		font-weight lighter 
+		// font-size 90% 
+	.icon-wrapper
+		text-align center		
+		z-index 10 
+		background-color transparent 
+		translate-Y(-15%)			
+		img
+			max-width 50%
+			height 4em   
+.section-ending
+	text-align center	
+	h4 
+		a
+			font-family Oswald-Regular
+			text-transform uppercase
+			color blackColor
+.columns-separator
+	img
+		text-align center
+		max-width 7%
+/*==================END OF PORTFOLIO SECTION=========*/
+
+/*==================MY BLOG SECTION================*/
+.my-blog
+	sectionPadding()
+	background-color #e3dfdc
+	background-image url(../img/bg4.png)  
+	background-repeat repeat 
+	position relative
+.blog-small-image-wrapper
+	img
+		max-width 100%
+		border 5px solid whiteColor 		
+		borderRadius(1.5%)
+		-webkit-box-shadow -1px 2px 1px 0px #c6c2c1 
+		box-shadow -1px 2px 1px 0px #c6c2c1 
+.blog-text-teaser
+	h3,h5
+		color blackColor
+		font-family RobotoSlab-Bold
+	h5 
+		margin 0 
+		font-weight 800
+		font-size  70%
+	.columns-separator
+		text-align left
+		img
+			vertical-align middle
+		
+.teaser-text
+	font-family RobotoSlab-Regular
+	font-weight lighter
+	color #38393b
+	font-size 0.8em 
+	letter-spacing 0.5px 
+	a
+		color blackColor
+/*====================END OF MY BLOG==============*/
+
+/*=====================CONTACT ME================*/
+.contact-me
+	sectionPadding()
+	background-image url(../img/bg5.jpg) 
+	background-repeat repeat
+	background-color #51545b
+	position relative
+.section-heading.inverse
+	h1, h2
+		color #f5edd8
+	h1 
+		text-shadow rgb(72, 74, 77) 1.3px 1.3px, rgb(255, 255, 255) 3px 3px
+.contact-form
+	text-align center
+.input
+	borderRadius(5px) 
+	width 100%
+	height 2em
+	line-height 2em 
+	color blackColor
+	font-family RobotoSlab-Regular  
+	margin 1% 0 
+	border none
+	outline transparent 
+	// font-size 0.9em 
+	padding 0.5% 2%
+.btn-submit
+	width 35%	
+	line-height 0.9em 
+	font-weight bolder 
+	background-color whiteColor
+	padding 2% 1% 
+	height 2.5em
+	-webkit-box-shadow 1px 1px 1px blackColor 
+	 box-shadow 1px 1px 1px blackColor     
+	-webkit-transition background-color 1s 
+	-moz-transition background-color 1s 
+	-ms-transition background-color 1s 
+	-o-transition background-color 1s 
+	transition background-color 1s 
+	&:hover, &:active, &:focus
+		background-color darken(whiteColor, 10) 
+.input-message
+	height 8em
+	borderRadius(3px)
+.section-ending.inverse
+	a
+		color whiteColor 
+.columns-separator.inverse
+	img
+		vertical-align text-top
+		width 30%
+.social-icons-wrapper
+	text-align center
+	// img
+	// 	max-width 19%
+.separator-last
+	background-image url(../img/divider.png) 
+	background-repeat repeat-x
+	height 2px
+	width: 100%
+	z-index 1
+	position absolute 
+	left 0
+	bottom 10px
+
+
+	
+		

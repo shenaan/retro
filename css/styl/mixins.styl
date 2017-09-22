@@ -1,0 +1,53 @@
+separator(n)
+	background-image url(../img/divider.png) 
+	background-repeat repeat-x
+	height 2px
+	width: 100%
+	z-index 1
+	position absolute 
+	left 0
+	top n
+translate-Y(y)
+	-webkit-transform translateY(y) 
+	-moz-transform translateY(y) 
+	-ms-transform translateY(y) 
+	-o-transform translateY(y) 
+	transform translateY(y) 
+translate-X(x)
+	-webkit-transform translateX(x) 
+	-moz-transform translateX(x) 
+	-ms-transform translateX(x) 
+	-o-transform translateX(x) 
+	transform translateX(x) 
+translate-XY(x,y)
+	-webkit-transform translate(x,y) 
+	-moz-transform translate(x,y) 
+	-ms-transform translate(x,y) 
+	-o-transform translate(x,y) 
+	transform translate(x,y) 
+
+borderRadius(n)
+	-webkit-border-radius n 
+	border-radius n 
+sectionPadding(b=5%,t=5%)
+	padding-bottom b   
+	padding-top t 
+sectionH1()
+	color blackColorSection
+	// font-size 5.1em
+	text-shadow rgb(255, 255, 255) 1.3px 1.3px, rgb(72, 74, 77) 3px 3px
+	text-align center  
+	text-transform uppercase  
+sectionH2()
+	color blackColor
+	// font-size 1.1em
+	font-family Oswald-Regular
+	text-align center
+	text-transform uppercase 
+	margin-top 0.4em 
+	font-weight lighter 
+sectionHeadingImageSeparator()
+	max-width 20%
+	text-align center 
+	margin-top 0.4em 
+

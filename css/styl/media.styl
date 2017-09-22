@@ -1,0 +1,162 @@
+@import 'variables.styl'
+@import 'mixins.styl'
+
+
+@media screen and (max-width:768px) 
+	.wrapper
+		width 90%
+		margin 0 auto 	
+	.navbar-wrapper
+		width 100% 	
+	.menu-item.hidden-xs
+		display none 
+		img
+			display none
+	.logo-image-wrapper
+		display none
+	.navbar-menu
+		display none
+		margin-top 10%
+	.visible-xs
+		display block
+		position absolute
+		top 20px 
+		right 20px 
+	.menu-item
+		line-height 1rem
+		padding 0		
+		-webkit-transition background-color 1s, color 1s  
+		-moz-transition background-color 1s, color 1s   
+		-ms-transition background-color 1s, color 1s   
+		-o-transition background-color 1s, color 1s   
+		transition background-color 1s, color 1s   
+		transition-timing-function linear
+		-webkit-transition-timing-function linear
+		-moz-transition-timing-function linear
+		-ms-transition-timing-function linear
+		-o-transition-timing-function linear
+		transition-timing-function linear
+		&:hover, &:active, &:focus
+			background-color whiteColor 
+			color blackColor	
+		a
+			display inline-block
+			width 100% 
+			max-height 100% 
+			padding 1.5% 0
+	.separator1-navbar
+		separator(6%)		
+	.separator2-navbar
+		separator(6.5%)
+	.separator3-navbar
+		separator(22%)
+		display none
+	.header-portfolio
+		sectionPadding(5%,7%)
+	.image-wrapper-animated
+		img
+			max-width 30%
+	.section-h1
+		font-size 4em
+		word-break: break-word
+	.section-h2
+		font-size 1em
+	.header-image-wrapper
+		&:nth-child(1)			
+			padding 16px
+		&:nth-child(2)
+			padding 0 16px 5px 16px
+	.intro
+		h1
+			font-size  1.5em
+		h2
+			font-size 1.1em
+	.portfolio-item-wrapper
+		h4
+			font-size 80% 
+	.social-icons-wrapper 
+		img
+			max-width: 15%
+	.btn-submit 
+		font-size 0.7em 
+	.filters
+		img
+			max-width 30%
+@media screen and (min-width:769px) and (max-width:992px)
+	.wrapper
+		width 760px
+		margin 0 auto 				
+	.hidden-xs
+		display inline-block
+	.centered
+		padding 0.4em 	
+	.visible-xs
+		display none	
+	.separator1-navbar
+		separator(9%)			
+	.separator2-navbar
+		separator(9.5%)
+	.menu-item
+		line-height navLineHeight
+	.navbar-wrapper
+		height navbarHeight	
+	.header-portfolio
+		sectionPadding()
+	.separator3-navbar
+		display none
+	.image-wrapper-animated
+		img
+			max-width 55%
+	.section-h1
+		font-size 5.1em
+	.section-h2
+		font-size 1em
+	.portfolio-item-wrapper
+		h4
+			font-size 90% 
+	.social-icons-wrapper 
+		img
+			max-width: 19%
+	.btn-submit 
+		font-size 0.9em 
+	.filters
+		img
+			max-width 10%
+@media screen and (min-width:993px)
+	.wrapper
+		width 990px
+		margin 0 auto 				
+	.hidden-xs
+		display inline-block	
+	.visible-xs
+		display none
+	.separator1-navbar
+		separator(9%)		
+	.separator2-navbar
+		separator(9.5%)	
+	.menu-item
+		line-height navLineHeight
+	.navbar-wrapper
+		height navbarHeight			
+	.header-portfolio
+		sectionPadding()
+	.separator3-navbar
+		display none
+	.image-wrapper-animated
+		img
+			max-width 55%
+	.section-h1
+		font-size 5.1em
+	.section-h2
+		font-size 1em
+	.portfolio-item-wrapper
+		h4
+			font-size 90% 
+	.social-icons-wrapper 
+		img
+			max-width: 19%
+	.btn-submit 
+		font-size 0.9em 
+	.filters
+		img
+			max-width 10%
